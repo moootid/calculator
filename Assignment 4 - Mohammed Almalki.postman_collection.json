@@ -1,0 +1,499 @@
+{
+	"info": {
+		"_postman_id": "0b0aed42-d7cb-4b82-9bf6-67a372622b35",
+		"name": "Assignment 4 - Mohammed Almalki",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16849206",
+		"_collection_link": "https://moootid.postman.co/workspace/My-Workspace~5356c2ad-b203-4de8-81f9-12833f90da10/collection/16849206-0b0aed42-d7cb-4b82-9bf6-67a372622b35?action=share&source=collection_link&creator=16849206"
+	},
+	"item": [
+		{
+			"name": "Get request",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ogas7wx3g3.execute-api.eu-central-1.amazonaws.com/calculate?num1=1&num2=5&operation=add",
+					"protocol": "https",
+					"host": [
+						"ogas7wx3g3",
+						"execute-api",
+						"eu-central-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"calculate"
+					],
+					"query": [
+						{
+							"key": "num1",
+							"value": "1"
+						},
+						{
+							"key": "num2",
+							"value": "5"
+						},
+						{
+							"key": "operation",
+							"value": "add"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post request",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"num1\":1,\r\n    \"num2\":5,\r\n    \"operation\":\"add\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ogas7wx3g3.execute-api.eu-central-1.amazonaws.com/calculate",
+					"protocol": "https",
+					"host": [
+						"ogas7wx3g3",
+						"execute-api",
+						"eu-central-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"calculate"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "add",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"num1\":1,\r\n    \"num2\":5,\r\n    \"operation\":\"add\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ogas7wx3g3.execute-api.eu-central-1.amazonaws.com/calculate",
+							"protocol": "https",
+							"host": [
+								"ogas7wx3g3",
+								"execute-api",
+								"eu-central-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"calculate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 05 May 2025 07:42:36 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "57"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "access-control-allow-headers",
+							"value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token"
+						},
+						{
+							"key": "access-control-allow-methods",
+							"value": "OPTIONS,GET,POST"
+						},
+						{
+							"key": "Apigw-Requestid",
+							"value": "KFXM-gcxFiAEPvg="
+						}
+					],
+					"cookie": [],
+					"body": "{\"num1\": 1, \"num2\": 5, \"operation\": \"add\", \"result\": \"6\"}"
+				},
+				{
+					"name": "subtract",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"num1\":2,\r\n    \"num2\":5,\r\n    \"operation\":\"subtract\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ogas7wx3g3.execute-api.eu-central-1.amazonaws.com/calculate",
+							"protocol": "https",
+							"host": [
+								"ogas7wx3g3",
+								"execute-api",
+								"eu-central-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"calculate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 05 May 2025 07:46:05 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "63"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "access-control-allow-headers",
+							"value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token"
+						},
+						{
+							"key": "access-control-allow-methods",
+							"value": "OPTIONS,GET,POST"
+						},
+						{
+							"key": "Apigw-Requestid",
+							"value": "KFXtli0zliAEP6w="
+						}
+					],
+					"cookie": [],
+					"body": "{\"num1\": 2, \"num2\": 5, \"operation\": \"subtract\", \"result\": \"-3\"}"
+				},
+				{
+					"name": "multiply",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"num1\":2,\r\n    \"num2\":5,\r\n    \"operation\":\"multiply\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ogas7wx3g3.execute-api.eu-central-1.amazonaws.com/calculate",
+							"protocol": "https",
+							"host": [
+								"ogas7wx3g3",
+								"execute-api",
+								"eu-central-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"calculate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 05 May 2025 07:46:33 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "63"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "access-control-allow-methods",
+							"value": "OPTIONS,GET,POST"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "access-control-allow-headers",
+							"value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token"
+						},
+						{
+							"key": "Apigw-Requestid",
+							"value": "KFXyDh4ZFiAEPxQ="
+						}
+					],
+					"cookie": [],
+					"body": "{\"num1\": 2, \"num2\": 5, \"operation\": \"multiply\", \"result\": \"10\"}"
+				},
+				{
+					"name": "divide",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"num1\":2,\r\n    \"num2\":5,\r\n    \"operation\":\"divide\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ogas7wx3g3.execute-api.eu-central-1.amazonaws.com/calculate",
+							"protocol": "https",
+							"host": [
+								"ogas7wx3g3",
+								"execute-api",
+								"eu-central-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"calculate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 05 May 2025 07:46:51 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "62"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "access-control-allow-headers",
+							"value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token"
+						},
+						{
+							"key": "access-control-allow-methods",
+							"value": "OPTIONS,GET,POST"
+						},
+						{
+							"key": "Apigw-Requestid",
+							"value": "KFX0yhMeFiAEP1w="
+						}
+					],
+					"cookie": [],
+					"body": "{\"num1\": 2, \"num2\": 5, \"operation\": \"divide\", \"result\": \"0.4\"}"
+				},
+				{
+					"name": "division by zero",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"num1\": \"2\",\r\n    \"num2\": \"0\",\r\n    \"operation\":\"divide\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ogas7wx3g3.execute-api.eu-central-1.amazonaws.com/calculate",
+							"protocol": "https",
+							"host": [
+								"ogas7wx3g3",
+								"execute-api",
+								"eu-central-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"calculate"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 05 May 2025 07:47:54 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "105"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "access-control-allow-headers",
+							"value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token"
+						},
+						{
+							"key": "access-control-allow-methods",
+							"value": "OPTIONS,GET,POST"
+						},
+						{
+							"key": "Apigw-Requestid",
+							"value": "KFX-phi2liAEPFQ="
+						}
+					],
+					"cookie": [],
+					"body": "{\"error\": \"Division by zero is not allowed.\", \"input\": {\"num1\": \"2\", \"num2\": \"0\", \"operation\": \"divide\"}}"
+				},
+				{
+					"name": "unsupported HTTP method",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"num1\": \"2\",\r\n    \"num2\": \"0\",\r\n    \"operation\":\"divide\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ogas7wx3g3.execute-api.eu-central-1.amazonaws.com/calculate",
+							"protocol": "https",
+							"host": [
+								"ogas7wx3g3",
+								"execute-api",
+								"eu-central-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"calculate"
+							]
+						}
+					},
+					"status": "Method Not Allowed",
+					"code": 405,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 05 May 2025 07:51:47 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "43"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "access-control-allow-headers",
+							"value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token"
+						},
+						{
+							"key": "access-control-allow-methods",
+							"value": "OPTIONS,GET,POST"
+						},
+						{
+							"key": "Apigw-Requestid",
+							"value": "KFYjGjeXliAEJaw="
+						}
+					],
+					"cookie": [],
+					"body": "{\"error\": \"Unsupported HTTP method: PATCH\"}"
+				}
+			]
+		}
+	]
+}
